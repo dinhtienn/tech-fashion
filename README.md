@@ -9,6 +9,6 @@
     * Frontend Framework: Bootstrap
     * Database: noSQL (MongoDB - Mlab)
 
-* Deployed at Heroku: [TechFashion](http://https://techfashionn.herokuapp.com/)
+* Deployed at Heroku: [TechFashion](https://techfashionn.herokuapp.com/)
 
 * Design by me 09/2018
