@@ -4,6 +4,8 @@
 
 * Final Project for C4E (CodeForEveryone) course in Techkids
 
+* eCommerce Website for Fashion
+
 * Technology:
     * Program language: Python
     * Frontend Framework: Bootstrap
