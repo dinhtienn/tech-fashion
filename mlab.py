@@ -1,18 +1,13 @@
 import mongoengine
+import config
 
-# mongodb://project:techmarket12@ds111063.mlab.com:11063/c4e20-project
-
-host = "ds111063.mlab.com"
-port = 11063
-db_name = "c4e20-project"
-user_name = "project"
-password = "techmarket12"
-
-def connect():
+def connect(dbname):
+    if dbname != config.DATABASE_CONFIG['dbname']:
+        raise ValueError("Couldn't not find DB with given name")
     mongoengine.connect(
-        db_name, 
-        host=host, 
-        port=port, 
-        username=user_name, 
-        password=password
+        db=config.DATABASE_CONFIG['dbname'],
+        host=config.DATABASE_CONFIG['host'],
+        port=config.DATABASE_CONFIG['port'],
+        user=config.DATABASE_CONFIG['user'],
+        password=config.DATABASE_CONFIG['password'],
     )

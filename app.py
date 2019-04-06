@@ -10,8 +10,7 @@ from gmail import *
 
 app = Flask(__name__)
 app.secret_key = "techmarket"
-
-mlab.connect()
+mlab.connect('c4e20-project')
 
 # Trang chủ
 @app.route('/')
